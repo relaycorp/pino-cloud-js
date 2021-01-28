@@ -29,7 +29,7 @@
     "static-checks:lint": "tslint --project .",
     "static-checks:prettier": "prettier \"src/**/*.ts\" --list-different",
     "test": "jest --coverage",
-    "test:ci": "run-s build test:ci:unit test:functional",
+    "test:ci": "run-s build test:ci:unit",
     "test:ci:unit": "jest --config jest.config.ci.js --coverage",
     "doc-api": "typedoc src/index.ts --out build/docs",
     "clean": "del-cli build test"
