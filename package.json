@@ -39,7 +39,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@relaycorp/shared-config": "^1.4.7",
+    "@relaycorp/shared-config": "^1.4.11",
     "@types/jest": "^26.0.20",
     "del-cli": "^3.0.0",
     "jest": "^24.9.0",
