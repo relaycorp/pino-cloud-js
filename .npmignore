@@ -1,0 +1,10 @@
+*
+
+!build/main/**
+!build/module/**
+_test_utils.*
+*.spec.js*
+
+!LICENSE
+!README.md
+!package.json

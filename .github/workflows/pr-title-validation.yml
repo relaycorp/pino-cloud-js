@@ -1,0 +1,16 @@
+name: "Require PR title to comply with Conventional Commits"
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    name: action-semantic-pull-request
+    steps:
+      - uses: amannn/action-semantic-pull-request@v3.2.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
