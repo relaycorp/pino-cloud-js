@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "run-s clean build:module",
-    "build:module": "tsc -p tsconfig.module.json",
+    "build:module": "tsc",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
     "fix:tslint": "tslint --fix --project .",
