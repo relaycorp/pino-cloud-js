@@ -7,8 +7,8 @@
     "url": "https://relaycorp.tech/"
   },
   "description": "Pino integration for cloud logging services like Google Cloud Logging",
-  "main": "build/main/index.js",
-  "typings": "build/main/index.d.ts",
+  "type": "module",
+  "typings": "build/module/index.d.ts",
   "module": "build/module/index.js",
   "repository": "https://github.com/relaycorp/pino-cloud-js",
   "homepage": "https://docs.relaycorp.tech/pino-cloud-js/",
@@ -20,8 +20,7 @@
     "gcp-error-reporting"
   ],
   "scripts": {
-    "build": "run-s clean && run-p build:*",
-    "build:main": "tsc -p tsconfig.json",
+    "build": "run-s clean build:module",
     "build:module": "tsc -p tsconfig.module.json",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
