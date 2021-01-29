@@ -39,12 +39,12 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@types/pino": "^6.3.5",
     "pino": "^6.11.0"
   },
   "devDependencies": {
     "@relaycorp/shared-config": "^1.4.7",
     "@types/jest": "^26.0.20",
+    "@types/pino": "^6.3.5",
     "del-cli": "^3.0.0",
     "jest": "^24.9.0",
     "jest-extended": "^0.11.5",
