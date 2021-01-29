@@ -17,10 +17,10 @@ npm install @relaycorp/pino-cloud
 This library simply returns a configuration object for Pino, which you augment before passing to Pino. For example:
 
 ```typescript
-import pinoCloud from '@relaycorp/pino-cloud';
+import { getPinoOptions } from '@relaycorp/pino-cloud';
 
 const LOGGER = pino({
-  ...pinoCloud(process.ENV.LOGGING_TARGET, {
+  ...getPinoOptions(process.ENV.LOGGING_TARGET, {
     name: 'your-app-name',
     version: '1.0.2',
   }),
