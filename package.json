@@ -1,22 +1,23 @@
 {
-  "name": "@relaycorp/object-storage",
+  "name": "@relaycorp/pino-cloud",
   "version": "1.0.0",
   "author": {
     "email": "no-reply@relaycorp.tech",
     "name": "Relaycorp, Inc.",
     "url": "https://relaycorp.tech/"
   },
-  "description": "Node.js client for object stores like AWS S3, GCP GCS or Minio",
+  "description": "Pino integration for cloud logging services like Google Cloud Logging",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/relaycorp/object-storage-js",
-  "homepage": "https://docs.relaycorp.tech/object-storage-js/",
+  "repository": "https://github.com/relaycorp/pino-cloud-js",
+  "homepage": "https://docs.relaycorp.tech/pino-cloud-js/",
   "license": "MIT",
   "keywords": [
-    "gcs",
-    "minio",
-    "s3"
+    "pino",
+    "stackdriver",
+    "gcp-cloud-logging",
+    "gcp-error-reporting"
   ],
   "scripts": {
     "build": "run-s clean && run-p build:*",
@@ -37,7 +38,10 @@
   "engines": {
     "node": ">=12"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/pino": "^6.3.5",
+    "pino": "^6.11.0"
+  },
   "devDependencies": {
     "@relaycorp/shared-config": "^1.4.7",
     "@types/jest": "^26.0.20",
@@ -51,6 +55,9 @@
     "tslint": "^5.20.1",
     "typedoc": "^0.20.19",
     "typescript": "^4.1.0"
+  },
+  "peerDependencies": {
+    "pino": "< 7.0.0"
   },
   "prettier": "@relaycorp/shared-config/.prettierrc.json",
   "publishConfig": {
