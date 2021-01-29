@@ -24,7 +24,7 @@ const LOGGER = pino({
     name: 'your-app-name',
     version: '1.0.2',
   }),
-  level: 'DEBUG',
+  level: 'debug',
 });
 ```
 
