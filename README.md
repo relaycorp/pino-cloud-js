@@ -28,7 +28,7 @@ const LOGGER = pino({
 });
 ```
 
-If the environment variable `LOGGING_TARGET` is unset, an empty dictionary is returned.
+If the environment variable `LOGGING_TARGET` is unset, an empty object is returned.
 
 ## Targets
 
