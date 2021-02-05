@@ -2729,7 +2729,7 @@ img {
 				<h3><code>gcp</code></h3>
 			</a>
 			<p><code>error</code> and <code>fatal</code> logs are augmented to include Error Reporting fields, like the name and version of your app.</p>
-			<p>Additionally, logs containing an <code>err</code> field will be assumed to be an instance of <code>Error</code> and therefore its stack trace will be added to a new field, where Error Reporting expects to find it.</p>
+			<p>Additionally, if the log contains an <code>err</code> field that is an instance of <code>Error</code>, its stack trace will be added to the field <code>stack_trace</code> -- Where Error Reporting expects to find it.</p>
 			<a href="#api-documentation" id="api-documentation" style="color: inherit; text-decoration: none;">
 				<h2>API documentation</h2>
 			</a>
@@ -2772,7 +2772,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Logging<wbr>Target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;gcp&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/relaycorp/pino-cloud-js/blob/f0ac96d/src/lib/options.ts#L9">lib/options.ts:9</a></li>
+						<li>Defined in <a href="https://github.com/relaycorp/pino-cloud-js/blob/f9fdbdf/src/lib/options.ts#L9">lib/options.ts:9</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2794,7 +2794,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/relaycorp/pino-cloud-js/blob/f0ac96d/src/lib/options.ts#L23">lib/options.ts:23</a></li>
+								<li>Defined in <a href="https://github.com/relaycorp/pino-cloud-js/blob/f9fdbdf/src/lib/options.ts#L23">lib/options.ts:23</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
