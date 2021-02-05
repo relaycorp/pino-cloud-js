@@ -77,7 +77,15 @@ describe('formatters', () => {
       expect(logEntry).toHaveProperty('stack_trace', err.stack);
     });
 
-    test('Stack trace should not be added to log entry if absent', () => {
+    test('Stack trace should not be added to log entry if err field is not an error', () => {
+      const originalLogEntry = { err: 'Not an Error instance', msg: 'Just wanted to say hi' };
+
+      const logEntry = logFormatter(originalLogEntry);
+
+      expect(logEntry).not.toHaveProperty('stack_trace');
+    });
+
+    test('Stack trace should not be added to log entry if error is absent', () => {
       const originalLogEntry = { msg: 'Just wanted to say hi' };
 
       const logEntry = logFormatter(originalLogEntry);

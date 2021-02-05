@@ -36,7 +36,7 @@ If the environment variable `LOGGING_TARGET` is unset, an empty object is return
 
 `error` and `fatal` logs are augmented to include Error Reporting fields, like the name and version of your app.
 
-Additionally, logs containing an `err` field will be assumed to be an instance of `Error` and therefore its stack trace will be added to a new field, where Error Reporting expects to find it.
+Additionally, if the log contains an `err` field that is an instance of `Error`, its stack trace will be added to the field `stack_trace` -- Where Error Reporting expects to find it.
 
 ## API documentation
 

@@ -32,7 +32,7 @@ export default function (appContext?: AppContext): Partial<LoggerOptions> {
       },
       log(entry): object {
         const error = (entry as any).err as Error | undefined;
-        return { ...entry, ...(error && { stack_trace: error.stack }) };
+        return { ...entry, ...(error instanceof Error && { stack_trace: error.stack }) };
       },
     },
     messageKey: 'message',
