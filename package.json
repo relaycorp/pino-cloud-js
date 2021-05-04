@@ -39,7 +39,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "pino": "^6.11.2"
+    "pino": "^6.11.3"
   },
   "devDependencies": {
     "@relaycorp/shared-config": "^1.4.13",
