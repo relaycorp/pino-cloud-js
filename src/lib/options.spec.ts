@@ -22,5 +22,5 @@ describe('getPinoOptions', () => {
 });
 
 function getMockInstance(mockedObject: any): jest.MockInstance<any, any> {
-  return (mockedObject as unknown) as jest.MockInstance<any, any>;
+  return mockedObject as unknown as jest.MockInstance<any, any>;
 }
