@@ -47,8 +47,8 @@ describe('formatters', () => {
     );
 
     test('App version should be added to Cloud Error Reporting if set', () => {
-      const levelFormatterWithVersion: LevelFormatter = gcpOptionGenerator(APP_CONTEXT_WITH_VERSION)
-        .formatters!!.level!!;
+      const levelFormatterWithVersion: LevelFormatter =
+        gcpOptionGenerator(APP_CONTEXT_WITH_VERSION).formatters!!.level!!;
       const entry = levelFormatterWithVersion('error', 0);
 
       expect(entry).toHaveProperty('serviceContext.version', APP_CONTEXT_WITH_VERSION.version);
