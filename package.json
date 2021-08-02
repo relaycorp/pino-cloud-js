@@ -44,7 +44,7 @@
   "devDependencies": {
     "@relaycorp/shared-config": "^1.5.3",
     "@types/jest": "^26.0.24",
-    "@types/pino": "^6.3.9",
+    "@types/pino": "^6.3.11",
     "del-cli": "^4.0.1",
     "jest": "^24.9.0",
     "jest-extended": "^0.11.5",
