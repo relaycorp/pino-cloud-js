@@ -4,6 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: weekly
-    time: "08:00"
-    timezone: Etc/UCT
   versioning-strategy: increase
+  commit-message:
+    prefix: "fix(deps):"
+    prefix-development: "chore(deps):"
