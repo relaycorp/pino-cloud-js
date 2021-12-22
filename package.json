@@ -30,7 +30,7 @@
     "static-checks:lint": "tslint --project .",
     "static-checks:prettier": "prettier \"src/**/*.ts\" --list-different",
     "test": "jest --coverage",
-    "test:ci:unit": "run-s build test:ci:unit",
+    "test:ci:unit": "run-s build test:ci:unit:jest",
     "test:ci:unit:jest": "jest --config jest.config.ci.js --coverage",
     "test:integration": "exit 0",
     "doc-api": "typedoc src/index.ts --out build/docs",
