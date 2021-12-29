@@ -2,5 +2,5 @@
   "exclude": ["**/*.spec.ts"],
   "excludePrivate": true,
   "excludeProtected": true,
-  "theme": "minimal"
+  "theme": "default"
 }
