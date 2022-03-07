@@ -43,7 +43,7 @@
     "pino": "^6.14.0"
   },
   "devDependencies": {
-    "@relaycorp/shared-config": "^1.6.1",
+    "@relaycorp/shared-config": "^1.7.0",
     "@types/jest": "^27.4.1",
     "@types/pino": "^6.3.9",
     "del-cli": "^4.0.1",
@@ -54,7 +54,7 @@
     "ts-jest": "^24.3.0",
     "ts-node": "^10.7.0",
     "tslint": "^5.20.1",
-    "typedoc": "^0.22.12",
+    "typedoc": "^0.22.13",
     "typescript": "^4.5.4"
   },
   "peerDependencies": {
