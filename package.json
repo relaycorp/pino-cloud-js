@@ -54,7 +54,7 @@
     "ts-node": "^10.7.0",
     "tslint": "^5.20.1",
     "typedoc": "^0.22.15",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.4"
   },
   "peerDependencies": {
     "pino": "< 8.0.0"
