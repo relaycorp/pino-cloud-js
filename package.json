@@ -40,10 +40,10 @@
     "node": ">=14"
   },
   "dependencies": {
-    "pino": "^8.1.0"
+    "pino": "^8.3.0"
   },
   "devDependencies": {
-    "@relaycorp/shared-config": "^1.8.0",
+    "@relaycorp/shared-config": "^1.9.1",
     "@types/jest": "^27.5.0",
     "del-cli": "^5.0.0",
     "jest": "^24.9.0",
